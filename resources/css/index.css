@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #eff3f4;
+}
+
+.page{
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    width: 50em;
+    margin: 0 auto;
+}
+
+.cover-image{ 
+    background-color: #c0d4e0;
+    width: 50em;
+}
+
+.slides{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.dots {
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots-wrapper{
+    padding-top: 0.25em;
+    text-align: center;
+    background-color: #1d2a33;
+}
+
+.active, .dots:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2em;
+    border-bottom: 0.09em dashed white;
+    background-color: #c0d4e0;
+}
+
+.container-hover:hover{
+    background-color: #a3bbc9;
+    box-shadow: 0 0 1.5em rgba(33,33,33,.2);
+}
+
+.column-1{
+    text-align: right;
+}
+
+.column-1 span{
+    margin-right: 0;
+    margin-left: 0.25em;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Crimson Text', Georgia, Times, serif;
+}
+
+h1{
+    padding-bottom: 0.75em;
+    color: #1d2a33;
+    text-align: center;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+}
+
+h2{
+    padding-bottom: 0.25em;
+    color: #1d2a33;
+    text-align: left;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+}
+
+h2 span{
+    margin-right: 0.25em;
+}
+
+sub{
+    color: #2676a5;
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+    color: #2676a5;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    padding-left: 2em;
+    list-style-type: circle;
+}
+
+.column-heading{
+    color: #2676a5;
+}
+
+details summary:focus{
+    outline: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary:first-of-type {
+    list-style-type: none;
+}
+
+details[open] summary  ~ * {
+  -webkit-animation-name: sweep;
+  -webkit-animation-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  animation: sweep 0.25s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+
+.back{
+    padding: 0.2em;
+    color: #1d2a33;
+    font-weight: bold;
+}
+
+.back:hover{
+   text-decoration: none;
+}
+
+.back span{
+    margin-right: 0.5em;
+}
+
+.footer{
+    flex-shrink: 0;
+    width: 100%;
+    padding: 0.5em;
+    background-color: white;
+}
+
+.footer a:hover{
+    text-decoration: none;
+}
+
+.footer p{
+     text-align: center;
+}
+
+.text-effect:hover{
+    text-shadow: 0 0 1.5em rgba(0,0,0,.7);
+}
+
+.team-details{
+    padding-left: 1em;
+}
+
+.team-details ol{
+    padding-left: 2em;
+    list-style-type: lower-roman;
+}
+
+.fa{
+    padding: 0.25em;
+}
+
+.icon-wrapper{
+    padding: 0.5em;
+    visibility: hidden;
+}
+
+.team-details li:hover i{
+    visibility: visible;
+}
