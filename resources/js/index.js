@@ -2,7 +2,8 @@ var slide_id = 1;
 
 function show_slide(n) {
     var i, slides = document.getElementsByClassName('slides'), dots = document.getElementsByClassName('dots');
-    
+    var placeholder_img = document.getElementById('placeholder');
+        
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';  
     }
@@ -10,7 +11,8 @@ function show_slide(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active-dots', '');
     }
-
+    
+    placeholder_img.style.display = 'none';
     slides[slide_id - 1].style.display = 'block';  
     dots[slide_id - 1].className += ' active-dots';
 }
@@ -20,6 +22,6 @@ function current_slide(n) {
 }
 
 function toggle_nav(){
-    var main_nav = document.getElementById('js-menu');;
+    var main_nav = document.getElementById('js-menu');
     main_nav.classList.toggle('active');
 }
