@@ -12,19 +12,188 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #eff3f4;
+    background-image: radial-gradient(#eff3f4 80%, #afc2c6);
+}
+
+p{
+    text-align: justify;
+    font-family: 'Crimson Text', Georgia, Times, serif;
+    font-size: 95%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1{
+    padding-bottom: 0.75em;
+    color: #1d2a33;
+    text-align: center;
+    font-size: 180%;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+}
+
+h2, h3{
+    padding-bottom: 0.15em;
+    color: #1d2a33;
+    text-align: left;
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+}
+
+h2{
+    font-size: 140%;
+}
+
+h3{
+    font-size: 120%;
+}
+
+h2 span, h3 span{
+    margin-right: 0.25em;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+}
+
+.last{
+    padding-right: 0;
+}
+
+.left{
+    display: none;
+}
+
+.left p{
+    color: #FFFFFF;
+}
+
+.right p{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.right{
+    background-color: #1d2a33;
+}
+
+nav li{
+    padding: 1%;
+}
+
+.main-nav{
+    display: none;
+    background-color: #1d2a33;
+}
+
+.active{
+    display: block;
+    background-color: #1d2a33; 
+}
+
+.nav-links{
+     list-style: none;
+     background-color: #1d2a33; 
+}
+
+.nav-links a:hover{
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 125%;
 }
 
 .page{
     display: flex;
     flex: 1 0 auto;
     flex-wrap: wrap;
-    width: 50em;
-    margin: 0 auto;
+    width: 80%;
+    margin: 8% auto;
+    margin-bottom: 2%;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.current-link{
+    color: #2676a5 !important;
+}
+
+@media all and (min-width: 850px){
+    .page{
+        width: 75%;
+        margin: 6% auto;
+        margin-bottom: 3%;
+    }
+    
+    .main-nav{
+        display: inline-block;
+    }
+    
+    nav p, nav div, nav li{
+        display: inline-block;
+    }
+    
+    nav li{
+        margin-left: 2%;
+        padding: 0;
+    }
+    
+    nav a{
+        padding: 1.25%;
+    }
+    
+    .navbar-toggle{
+        display: none;
+    }
+    
+    .left{
+        padding: 0 0 0 1.25%;
+        display: inline-block;
+        text-align: left;
+        width: 25%;
+        font-weight: bold;
+    }
+    
+    .right{
+        width: 70%;
+        text-align: right;
+    }
+    
+    h1{
+      font-size:  220%;
+    }
+    
+    h2{
+       font-size: 150%;
+    }
+    
+    h3{
+        font-size: 130%;
+    }
+    
+    p{
+        font-size: 105%;
+    }
+    
+}
+
+@media all and (min-width: 1200px){
+    .page{
+        width: 65%;
+    }
 }
 
 .cover-image{ 
     background-color: #c0d4e0;
-    width: 50em;
+    width: 100%;
 }
 
 .slides{
@@ -49,7 +218,7 @@ body{
     background-color: #1d2a33;
 }
 
-.active, .dots:hover {
+.active-dots, .dots:hover {
   background-color: #717171;
 }
 
@@ -75,7 +244,7 @@ body{
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 2em;
+    padding: 1.5em;
     border-bottom: 0.09em dashed white;
     background-color: #c0d4e0;
 }
@@ -85,6 +254,10 @@ body{
     box-shadow: 0 0 1.5em rgba(33,33,33,.2);
 }
 
+.column{
+    min-width: 0;
+}
+
 .column-1{
     text-align: right;
 }
@@ -92,29 +265,6 @@ body{
 .column-1 span{
     margin-right: 0;
     margin-left: 0.25em;
-}
-
-p{
-    text-align: justify;
-    font-family: 'Crimson Text', Georgia, Times, serif;
-}
-
-h1{
-    padding-bottom: 0.75em;
-    color: #1d2a33;
-    text-align: center;
-    font-family: 'Allerta', Helvetica, Arial, sans-serif;
-}
-
-h2{
-    padding-bottom: 0.25em;
-    color: #1d2a33;
-    text-align: left;
-    font-family: 'Allerta', Helvetica, Arial, sans-serif;
-}
-
-h2 span{
-    margin-right: 0.25em;
 }
 
 sub{
@@ -167,25 +317,11 @@ details[open] summary  ~ * {
   100%  {opacity: 1;}
 }
 
-.back{
-    padding: 0.2em;
-    color: #1d2a33;
-    font-weight: bold;
-}
-
-.back:hover{
-   text-decoration: none;
-}
-
-.back span{
-    margin-right: 0.5em;
-}
-
-.footer{
+.footer, nav{
+    padding: 0.75%;
     flex-shrink: 0;
     width: 100%;
-    padding: 0.5em;
-    background-color: white;
+    background-color: #1d2a33;
 }
 
 .footer a:hover{
@@ -194,10 +330,15 @@ details[open] summary  ~ * {
 
 .footer p{
      text-align: center;
+     color: #FFFFFF;
 }
 
 .text-effect:hover{
     text-shadow: 0 0 1.5em rgba(0,0,0,.7);
+}
+
+.text-shadow-effect:active{
+    color: #2676a5;
 }
 
 .team-details{
@@ -220,4 +361,19 @@ details[open] summary  ~ * {
 
 .team-details li:hover i{
     visibility: visible;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.blink{
+    color: #2676a5;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

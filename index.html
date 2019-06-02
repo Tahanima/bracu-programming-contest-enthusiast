@@ -4,22 +4,41 @@
     
     <head>
         <meta charset='UTF-8'/>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <title>BRACU Programming Contest Enthusiasts</title>
         <link rel='stylesheet' href='resources/css/index.css'/>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Allerta'/>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Crimson+Text'/>
         <link rel='icon' href='resources/images/icon.png' type='image/icon'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
         <script type='text/javascript' src='resources/js/index.js'></script>
     </head>
     
     <body onload='show_slide(1)'>
+        <nav>
+            <span class='navbar-toggle' id='js-navbar-toggle' onclick='toggle_nav()'>
+                <i class='fa fab fa-bars'></i>
+            </span>
+            <div class='left'>
+                <p>&gt; $ cd /home/ <span class='blink bold'>|</span></p>
+            </div>
+            <ul class='right main-nav' id='js-menu'>
+                <li class='nav-links'><a href='index.html'><p class='current-link text-shadow-effect uppercase'>Home</p></a></li>
+                <li class='nav-links'><a href='hall-of-fame.html'><p class='text-shadow-effect uppercase'>Hall of Fame</p></a></li>
+                <li class='nav-links'><a href='resources.html'><p class='text-shadow-effect uppercase'>Resources</p></a></li>
+                <li class='nav-links'><a href='motivation-101.html' class='last'><p class='text-shadow-effect uppercase'>Motivation-101</p></a></li>
+            </ul>
+        </nav>
+
+        
         <div class='page'>
             <div class='cover-image'>
-                <img class='slides fade' src='resources/images/all-members.jpg' alt='IUPC in NSU'/>
-                <img class='slides fade' src='resources/images/iut-ict-fest-16.jpg' alt='ICT Fest in IUT'/>
-                <img class='slides fade' src='resources/images/girls-in-ict.jpg' alt='Award Ceremony for Girls in ICT Programme'/>
-                <img class='slides fade' src='resources/images/nsu-iugpc-18.jpg' alt='NSU IUGPC'/>
+                <div>
+                    <img class='slides fade' src='resources/images/all-members.jpg' alt='IUPC in NSU'/>
+                    <img class='slides fade' src='resources/images/iut-ict-fest-16.jpg' alt='ICT Fest in IUT'/>
+                    <img class='slides fade' src='resources/images/girls-in-ict.jpg' alt='Award Ceremony for Girls in ICT Programme'/>
+                    <img class='slides fade' src='resources/images/nsu-iugpc-18.jpg' alt='NSU IUGPC'/>
+                </div>
 
                 <div class='dots-wrapper'>
                   <span class='dots' onclick='current_slide(1)'></span> 

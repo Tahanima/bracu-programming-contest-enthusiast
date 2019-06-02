@@ -4,18 +4,35 @@
     
     <head>
         <meta charset='UTF-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <title>Motivation 101</title>
         <link rel='stylesheet' href='resources/css/index.css'/>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Allerta'/>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Crimson+Text'/>
         <link rel='icon' href='resources/images/icon.png' type='image/icon'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <script type='text/javascript' src='resources/js/index.js'></script>
     </head>
     
     <body>
-        <div class='page'>
+        <nav>
+            <span class='navbar-toggle' id='js-navbar-toggle' onclick='toggle_nav()'>
+                <i class='fa fab fa-bars'></i>
+            </span>
+            <div class='left'>
+                <p>&gt; $ cd /motivation-101/ <span class='blink bold'>|</span></p>
+            </div>
+            <ul class='right main-nav' id='js-menu'>
+                <li class='nav-links'><a href='index.html'><p class='text-shadow-effect uppercase'>Home</p></a></li>
+                <li class='nav-links'><a href='hall-of-fame.html'><p class='text-shadow-effect uppercase'>Hall of Fame</p></a></li>
+                <li class='nav-links'><a href='resources.html'><p class='text-shadow-effect uppercase'>Resources</p></a></li>
+                <li class='nav-links'><a href='motivation-101.html' class='last'><p class='current-link text-shadow-effect uppercase'>Motivation-101</p></a></li>
+            </ul>
+        </nav>
+        
+        <div class='page'> 
             <div class='container'>
                 <div class='column'>
-                    <a class='back' href='index.html'><div class='text-effect'><span>&#129168;</span>Back</div></a>
                     <h1>Motivation<sub>-101</sub></h1>
                     <p>Each one of us involved, has faced a lot of hurdles and has been able to get through them during our competitive programming journey. There were moments which have motivated us a lot and there were moments as well when we thought we were very incompetent. Sharing some words from few alumni of the competitive programming community of BRAC University (while keeping the person's identity anonymous) so that the current and future contestants get motivated and encouraged.</p>
                 </div>
@@ -24,7 +41,7 @@
             <div class='container container-hover'>
                 <div class='column'>
                     <details>
-                        <summary><h2><span>|</span><a>When I started solving competitive programming problems, it was pretty late.</a></h2></summary>
+                        <summary><h3><span>|</span><a>When I started solving competitive programming problems, it was pretty late.</a></h3></summary>
                         <p>When I started solving competitive programming problems, it was pretty late. I mean, I started after I've completed CSE 221 (Algorithms course). One of my batch mates once said to me to start solving but at that point, I felt problem solving requires the implementation of a lot of algorithms so I should start after I'm done with CSE 221. That was a pretty bad decision from my end since a lot of problems can be solved without the knowledge of algorithms. Then, shaping my brain to think critically was a major challenge since our education system is such that we are only confined to studies. I literally struggled a lot. There were times when it felt like problem solving is not for me, I was better being a "good student". I mean at least at the end of a semester I get certain rewards in the disguise of good "CGPA". Problem solving has both its pros and cons. And the cons does not matter to be honest. This is because it is possibly the only thing in my life which gives me immense joy even when I fail since I know I'm learning.</p>
                     </details>
                 </div>
@@ -33,11 +50,54 @@
             <div class='container container-hover'>
                 <div class='column'>
                     <details>
-                        <summary><h2><span>|</span><a>I got more WAs than ACs in this short life of mine.</a></h2></summary>
+                        <summary><h3><span>|</span><a>I got more WAs than ACs in this short life of mine.</a></h3></summary>
                         <p>I got more WAs than ACs in this short life of mine. Its like getting things wrong is in my blood. On a serious note, it is a very bad experience to get a WA after spending two or more days on a problem. I have many such problems which I have tried to solve for a very long time and still was not able to solve. I have kept those noted down so that when I may get the time I will try them once again. But getting that AC feels so great. To be honest, it's very easy to get demotivated really fast. It can sometimes be frustrating even. But it's worth it. That feeling of accomplishment is totally worth it. I can sometimes be very addicted towards such problems which I cannot solve. It feels like I can solve it but not being able to solve it really bugs me a lot. And I guess that is what keeps me motivated. The failure to solve a problem of my standard keeps me motivated. There are also such problems which are simply said to be out of my league. Those give me the cringes and the inspiration to google about that topic, to learn more. But honestly the biggest thing that motivates me to solve problems is my dream that one day Bangladesh will have Programming as a part of its curriculum and the students will be solving programming problems. I am not a good problem solver, I am slow, I have very less solves. But I am trying. I know I can never be the best but it's ok. Problem solving is fun. I intend on keeping it as a hobby.</p>
                     </details>
                 </div>
             </div>
+            
+            <div class='container container-hover'>
+                <div class='column'>
+                    <details>
+                        <summary><h3><span>|</span><a>প্রোগ্রামিং কন্টেস্টের কথা শুনলে শুরুতেই একটা প্রতিযোগিতামূলক ভাব চলে আসে।</a></h3></summary>
+                        <p>প্রোগ্রামিং কন্টেস্টের কথা শুনলে শুরুতেই একটা প্রতিযোগিতামূলক ভাব চলে আসে। বাকি সব খেলার মত কম্পিটেটিভ প্রোগ্রামিং ও একটা স্পোর্টস যেখানে হার-জিত ভাল-মন্দ আছে। তবে এই খেলা সবার চেয়ে একটু ভিন্ন। এই খেলায় যদি প্রথম হওয়া কিংবা সেরা ১০ এ থাকা যদি তোমার কাছে সাফল্যের আসল সংজ্ঞা হয় তবে কষ্টের বিষয় হল ৯০ ভাগের বেশি এই খেলায় আজীবন অসফলই থাকে। তবে কি তাদের জীবন এবং কন্টেস্টের পিছনে সময় দেওয়া কি ব্যর্থ ? না, অবশ্যই না। একটা জিনিষ সবসময় মাথায় রাখতে হবে যে প্রতিযোগিতা শুধু অন্য মানুষদের সাথে হয় না, নিজের সাথেও হয় । ব্র্যাক এর সাবেক শিক্ষক শ্রদ্ধেয় ফারাজুল হক ভুঁইয়া স্যার এই কথাটি প্রায়শই বলত এবং এটি প্রোগ্রামিং কন্টেস্টের ক্ষেত্রে অনেক বেশি সত্যি । যখন আপনি কন্টেস্টের জন্য অসংখ্য এ্যাল্গোরিদম – ডাটা স্ট্র্যাকচার শিখবেন, নানা প্রবলেম সল্ভ করবেন তখন স্বাভাবিকভাবে আপনি অনেকের থেকে পারদর্শী হয়ে উঠবেন কিন্তু সবচেয়ে বড় কথা আপনি নিজেকে পুর্বের থেকে আরো ইম্প্রুভ করলেন। এটাই হওয়া উচিৎ কন্টেস্টের লক্ষ্য, আগের থেকে বেশি জানা !</p>
+                    </details>
+                </div>
+            </div>
+            
+            <div class='container container-hover'>
+                <div class='column'>
+                    <details>
+                        <summary><h3><span>|</span><a>"Passion is overrated" if it doesn't help/push you to work hard enough to sweat your butt.</a></h3></summary>
+                        <p>"Passion is overrated" if it doesn't help/push you to work hard enough to sweat your butt. This is a great lesson I have learnt over the years. I was passionate and hard working during my early days as a competitive programmer. After a year and a half it was just passion left there.<br><br>
+                        I enjoyed solving problems, even now I try to read about it and try to solve problems whenever I feel nostalgic. I made a lot of mistakes in those days. What I really regret about is one good rank could be enough for me to change.
+                        Whatever, life goes on trying to focus on something else now. I met the best people that time whom I wouldn't meet otherwise.So, it's a win for me after all.</p>
+                    </details>
+                </div>
+            </div>
+            
+            <div class='container container-hover'>
+                <div class='column'>
+                    <details>
+                        <summary><h3><span>|</span><a>HSC পরীক্ষার পরই সিদ্ধান্ত নেই যে undergraduate এ কম্পিউটার সাইন্সেই পড়বো ।</a></h3></summary>
+                        <p>HSC পরীক্ষার পরই সিদ্ধান্ত নেই যে undergraduate এ কম্পিউটার সাইন্সেই পড়বো । যদিও  কম্পিউটার সাইন্স , প্রোগ্রামিং এসব নিয়ে তখন তেমন কোন ধারণাই ছিল না, তারপরও কয়েকটা কারণে এই সিদ্ধান্ত নিয়েছিলাম।  প্রথমত, আমার মনে হত অন্য যে কোন ইঞ্জিনিয়ারিং বিষয় এর চেয়ে কম্পিউটার সাইন্সে স্বাধীনভাবে কাজ করার সুযোগ বেশি। আর তাছাড়া , ইন্টারমিডিয়েটের সময় থেকেই Mathematics আমার অনেক ভাল লাগতো , আর কম্পিউটার সাইন্সের বিষয়ে  তেমন কিছু না জানলেও সবসময়ই মনে হত  Computer Science আর Mathematics অনেকটা related । এটা মনে হওয়ার একটা কারণ , আমার  মনে হত, Computer মানেই computing,  আর computing বা গণনার জন্য counting আর math এর অন্যান্য বিষয় হয়ত কাজে লাগবে । আমার ধারণা যে ভুল না , সেটা Discrete math course করতে গিয়ে বুঝেছিলাম । Discrete math হল সেই Course যেখানে এ  Computer Science এ  Math এর যেসব বিষয় বেশি দরকার, সেগুলো শেখানো হয় । যাই হোক , এবার মুল কথায় আসি। Undergraduate এর আগে programming নিয়ে তেমন কোন ধারণাই ছিল না (Intermediate এর সময় হাতেগোনা কয়েকটা flow chart শিখেছিলাম, কিন্তু সেগুলো problem solving এ কিভাবে সাহায্য করতে পারে, সেটা নিয়ে স্পষ্ট ধারণা ছিল না ) ।  তাই প্রথম দিকে বেসিক আর সহজ প্রবলেম solve করতেও অসুবিধা হত ।  ভার্সিটির শুরুর দিকে , (খুব সম্ভবত  CSE111 এর সময় ) সুবিন ভাইয়ার blog আর উনার বই পড়ে programming আর programming contest সম্পর্কে আগ্রহ জন্মে ।  কিন্তু তখনও আমাদের কোন trainer ছিল না, তাই অল্প যা কিছু পারি, সেটা দিয়ে online judge এ  problem solve করার চেষ্টা করতাম । দেখা যেত , অল্প কিছু প্রব্লেম পারতাম, knowledge আর guideline এর অভাবে বেশিরভাগ প্রব্লেম ই পারতাম না । এমন কি প্রব্লেম এ কি চাইছে , কোন fromat এ input- output হবে সেগুলো নিয়েও প্রথম দিকে অসুবিধা হত। programming contest নিয়ে অনেক প্রাপ্তি আর অপ্রাপ্তি মিলিয়ে মিশ্র অভিজ্ঞতা হয়েছে ।  আমার batchmate দের থেকে কোর্স হিসাবে আমি অনেক পিছিয়ে ছিলাম । আমাদের যখন প্রথম trainer (Raqibul Sir) আসেন ,তখন আমার batchmate যারা contest এর ক্লাস করত , তাদের অনেকের ই algorithm course টা শেষ , অথচ আমার তখনঅ data structure ও শেষ হয়নি ।  তাই Sir যখন advanced topic পড়াতেন , তার অনেক কিছুই বুঝতাম না ।</p>
+                    </details>
+                </div>
+            </div>
+            
+            <div class='container container-hover'>
+                <div class='column'>
+                    <details>
+                        <summary><h3><span>|</span><a>When I was in my first year, I first knew about competitive programming before going to RS.</a></h3></summary>
+                        <p>When I was in my first year, I first knew about competitive programming before going to RS. I used to do some classes. However, due to RS, I missed that batch and had to start off from a new one. In the meantime, I used to solve taking help from the senior contestants. In that period, I was highly focused on solving. Coding courses seemed to be very easy after solving those UVa problems. To add an example to show the craze, I was stuck with a problem for two days. I used to think about that all the day and night but couldn’t figure out the missing thing! One day, in the morning, while sleeping, I had a dream about that problem. Surprisingly, I found the solution in my dream!! It was 5am in the morning. I went up from my bed and quickly turned on the laptop to solve it! And it was ACCEPTED!!! That was me during that time, thinking about problems even in my sleep!  As a result, I got selected at a national programming camp where I met many future talented programmers of the country. There I came to know about ACM ICPC and its World Finals round. It sounded like a dream to me that one day, I will go there. I heard about that year’s world finalists. All of a sudden, they became a superhero to me! I really wanted to meet them! Thanks to Allah, I got that opportunity the very next day the camp ended. All the world finalists were in front of me in a seminar organized by DevSkill.<br><br>
+                            
+                        As days went by, I started to dive deep into problem-solving! In my second year, I participated in 4-5 onsite contests and solved many problems. At the end of that year, I got the greatest achievement of my life! My team won the Intra University contest! Our team solved 7 problems where I alone solved 4 problems. It was a dreamy situation for me as I didn’t see that much of a success in my life. Tahanima apu used to speak about one term - level up! I used to think I was close to that level up! But all of a sudden, third-year happened to me! My solving rate went down! It never increased after that. I couldn’t achieve my level up which I was dreaming of! Procrastination was the virus in me. When 3rd year ended, I realized what I have done! Although I got a chance to participate in the ICPC regional, I felt, I got washed away in this arena!<br><br> 
+                            
+                        However, I think I learned something from that. I learned I need to be serious with my life. My father always tells me “Whatever you do, do it seriously, be it a very small thing”. One more thing I realized from this is, starting something is easy, but to finish the job is the real thing. Sometimes, there are some dreams which never gets fulfilled but create an impact on you to become better to catch the later dreams! Every experience matters in our life! Programming Contest was undoubtedly the best among them!</p>
+                    </details>
+                </div>
+            </div>
+            
         </div>
         
         <footer class='footer'>
