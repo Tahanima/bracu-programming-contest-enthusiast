@@ -196,6 +196,11 @@ nav li{
     width: 100%;
 }
 
+.placeholder{
+    width: 100%;
+    height: auto;
+}
+
 .slides{
     display: none;
     width: 100%;
@@ -245,7 +250,7 @@ nav li{
     justify-content: left;
     align-items: center;
     padding: 1.5em;
-    border-bottom: 0.09em dashed white;
+    border-bottom: 0.09em dashed #ffffff;
     background-color: #c0d4e0;
 }
 
