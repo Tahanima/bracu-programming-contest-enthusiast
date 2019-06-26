@@ -12,7 +12,6 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #eff3f4;
-    background-image: radial-gradient(#eff3f4 80%, #afc2c6);
 }
 
 p{
