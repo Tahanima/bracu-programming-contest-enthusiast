@@ -1,0 +1,2 @@
+# bracu-programming-contest-enthusiast
+This is a site I created as a practice project after completing the courses [Introduction to HTML5](https://www.coursera.org/learn/html), [Introduction to CSS3](https://www.coursera.org/learn/introcss), [Interactivity with JavaScript](https://www.coursera.org/learn/javascript) and [Advanced Styling with Responsive Design](https://www.coursera.org/learn/responsivedesign) from Coursera.
